@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Bio - less</title>
+        <link rel="icon" href="src/img/Logo1.png">
+
+        <link rel="stylesheet" href="src/css/style1.css"/>
+        <script src="src/javascript/index.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    </head>
+    <body>
+        <div id="perfil">
+            <img src="src/img/FotoPerfil.gif"><br>
+            <a href=""><b>Less</b></a>
+        </div>
+        
+        <div id="links">
+            <a href="https://www.tiktok.com/@lesstrem"><i class="fab fa-tiktok">&nbsp;</i> TIKTOK</a>
+            <a href="https://discord.gg/yNjjncnejs"><i class="fab fa-discord">&nbsp;</i> DISCORD</a>
+            <a href="https://www.instagram.com/lesstrainn"><i class="fab fa-instagram">&nbsp;</i> INSTAGRAM</a>
+            <a href="https://open.spotify.com/user/317vwhozc4wmhwy5wfly7rnse6c4?si=78YfAzzhQJWJrXyBg-BEYA&utm_source=copy-link"><i class="fab fa-spotify">&nbsp;</i> SPOTIFY</a>
+        </div>
+
+        <footer>
+            <br/>
+            
+        </footer>
+    </body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo interativo com mouse</title>
+    <style type="text/css">
+        body{
+            overflow: hidden;
+            height: 100vh;
+            width: 100%;
+            background-image: url(https://cdn.discordapp.com/attachments/1024217375446401076/1047609235267137686/polly.gif);
+            background-size: 1600px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        h1{
+            font-family: sans-serif;
+            font-weight: 800;
+            color: #5865f2;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        document.onmousemove = (e) => {
+            let body = document.querySelector('body');
+            var x = -e.clientX / 10,
+                y = -e.clientY / 10;
+            body.style = `background-position: ${x}px ${y}px;`
+        }
+    </script>
+</body>
+</html>
